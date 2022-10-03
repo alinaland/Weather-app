@@ -1,0 +1,123 @@
+.background {
+  background: linear-gradient(315deg, #e1701a, #f7a440, #f6dcbf, #aaaaaa);
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationName 39s ease infinite;
+  -moz-animation: AnimationName 39s ease infinite;
+  animation: AnimationName 39s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  background: rgba(246, 220, 190, 0.4);
+  padding: 80px;
+  border-radius: 15px;
+  margin-top: 50px;
+  box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.1);
+}
+.container:hover {
+  background-color: rgba(246, 220, 190, 0.6);
+
+  transition: all 500ms ease-in-out;
+}
+#search-form {
+  display: block;
+  padding-left: 55px;
+  padding-bottom: 30px;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  padding-left: 55px;
+  display: inline;
+}
+.units {
+  font-size: 30px;
+  font-weight: 400;
+  vertical-align: top;
+  line-height: 110px;
+  text-decoration: none;
+}
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  padding-left: 59px;
+  font-size: 30px;
+}
+#celsious-link #fahrenheit-link {
+  text-decoration: none;
+}
+#current {
+  display: block;
+  margin-right: 20px;
+}
+.specs {
+  font-size: 30px;
+  display: block;
+  text-align: right;
+  line-height: 1.6;
+  padding-top: 215px;
+  padding-right: 55px;
+}
+#city {
+  font-size: 65px;
+  font-weight: 400;
+}
+.degree {
+  font-size: 170px;
+  padding-bottom: 35px;
+  font-weight: 600;
+}
+.col-2 {
+  padding: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 29px;
+  font-weight: 300;
+  display: block;
+  text-align: center;
+}
+.icon {
+  font-size: 70px;
+}
+.forecast {
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  font-family: sans-serif;
+}
