@@ -121,3 +121,8 @@ h2 {
 body {
   font-family: sans-serif;
 }
+footer {
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  text-align: center;
+}
