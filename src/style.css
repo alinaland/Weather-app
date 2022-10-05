@@ -1,13 +1,9 @@
-.background {
+.day {
   background: linear-gradient(315deg, #e1701a, #f7a440, #f6dcbf, #aaaaaa);
   background-size: 800% 800%;
-
-  -webkit-animation: AnimationName 39s ease infinite;
-  -moz-animation: AnimationName 39s ease infinite;
-  animation: AnimationName 39s ease infinite;
+  -webkit-animation: day 39s ease infinite;
 }
-
-@-webkit-keyframes AnimationName {
+@-webkit-keyframes day {
   0% {
     background-position: 0% 50%;
   }
@@ -18,18 +14,13 @@
     background-position: 0% 50%;
   }
 }
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+
+.night {
+  background: linear-gradient(325deg, #464159, #6c7b95, #8bbabb);
+  background-size: 800% 800%;
+  -webkit-animation: night 12s ease infinite;
 }
-@keyframes AnimationName {
+@-webkit-keyframes night {
   0% {
     background-position: 0% 50%;
   }
@@ -42,14 +33,16 @@
 }
 
 .container {
-  background: rgba(246, 220, 190, 0.4);
+  background: rgba(255, 255, 255, 0.2);
   padding: 80px;
+  display: block;
+  max-width: 200px;
   border-radius: 15px;
   margin-top: 50px;
   box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.1);
 }
 .container:hover {
-  background-color: rgba(246, 220, 190, 0.6);
+  background-color: rgba(255, 255, 255, 0.4);
 
   transition: all 500ms ease-in-out;
 }
@@ -61,10 +54,16 @@
 
 h1 {
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
   line-height: 1.2;
   padding-left: 55px;
   display: inline;
+}
+#imperial {
+  font-family: "Open Sans", sans-serif;
+  vertical-align: top;
+  font-size: 50px;
+  padding-bottom: 35px;
+  font-weight: 600;
 }
 .units {
   font-size: 30px;
@@ -73,47 +72,38 @@ h1 {
   line-height: 110px;
   text-decoration: none;
 }
-h2 {
+.today {
   font-family: "Open Sans", sans-serif;
-  font-weight: 200;
+  font-weight: 500;
   line-height: 1.6;
   padding-left: 59px;
-  font-size: 27px;
+  font-size: 30px;
 }
-#celsious-link #fahrenheit-link {
-  text-decoration: none;
-}
+
 #current {
   display: block;
   margin-right: 20px;
 }
 .specs {
   font-size: 30px;
+  font-family: "Open Sans", sans-serif;
   display: block;
   text-align: right;
-  line-height: 1.6;
-  padding-top: 215px;
-  padding-right: 55px;
+  line-height: 2;
+  padding-top: 20px;
 }
 #city {
-  font-size: 65px;
-  font-weight: 400;
+  font-size: 80px;
+  font-weight: 600;
 }
 .degree {
   font-size: 170px;
   padding-bottom: 35px;
   font-weight: 600;
 }
-.col-2 {
-  padding: 30px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 29px;
-  font-weight: 300;
-  display: block;
-  text-align: center;
-}
 .icon {
-  font-size: 70px;
+  display: block;
+  padding-left: 55px;
 }
 .forecast {
   font-family: "Open Sans", sans-serif;
